@@ -1,19 +1,13 @@
-const img = document.getElementById("cartaImg");
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("imgModal");
-const close = document.querySelector(".close");
+const btn = document.getElementById("langBtn");
+let lang = "es";
 
-img.onclick = () => {
-  modal.style.display = "block";
-  modalImg.src = img.src;
-};
+btn.addEventListener("click", () => {
 
-close.onclick = () => {
-  modal.style.display = "none";
-};
+  lang = lang === "es" ? "en" : "es";
+  btn.textContent = lang.toUpperCase();
 
-window.onclick = (e) => {
-  if (e.target == modal) {
-    modal.style.display = "none";
-  }
-};
+  document.querySelectorAll("[data-es]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+});
