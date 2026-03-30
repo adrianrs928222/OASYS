@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chiringuito Oasis | 5 Estrellas</title>
+<title>OASIS | Pepa & Ulric - De sol y sal | Beach Club Chipiona</title>
+
+<meta name="description" content="OASIS Beach Club en Chipiona. Pepa & Ulric. Cocina mediterránea frente al mar en Playa Cruz del Mar. 'De sol y sal'.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="OASIS Beach Club Chipiona">
+<meta property="og:description" content="Pepa & Ulric · De sol y sal · Restaurante frente al mar en Chipiona">
 
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="assets/img/favicon.png">
@@ -16,104 +23,103 @@
 
 <!-- HEADER -->
 <header class="header">
-  <div class="container header-inner">
+
+  <div class="header-inner">
 
     <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo">
+      <img src="assets/img/logo.png" alt="OASIS">
     </div>
 
     <nav class="nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#carta">Carta</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="#carta" data-es="Carta" data-en="Menu">Carta</a>
+      <a href="#ubicacion" data-es="Ubicación" data-en="Location">Ubicación</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
 
-    <div class="social">
-      <a href="https://www.facebook.com/share/18Li5ewPVT/" target="_blank">
-        <img src="assets/img/facebook.png">
-      </a>
-
-      <a href="https://www.instagram.com/chiringuitooasischipiona?igsh=MWo1eGo2cHV0bmo5bw==" target="_blank">
-        <img src="assets/img/instagram.png">
-      </a>
-    </div>
+    <button id="langBtn" class="lang-btn">EN</button>
 
   </div>
 </header>
 
 <!-- HERO -->
 <section id="inicio" class="hero">
+
   <div class="overlay"></div>
 
   <div class="hero-content">
-    <h1>Chiringuito Oasis</h1>
-    <p>Beach Club · Gastronomía Mediterránea · Experiencia 5⭐</p>
 
-    <a href="#carta" class="btn">Ver Carta</a>
+    <h1>OASIS</h1>
+
+    <h2 class="sub-brand">Pepa & Ulric</h2>
+
+    <p class="slogan">"De sol y sal"</p>
+
+    <a href="#carta" class="btn" data-es="Ver Carta" data-en="View Menu">Ver Carta</a>
+
   </div>
+
 </section>
 
 <!-- CARTA -->
 <section id="carta" class="section">
-  <div class="container">
 
-    <h2 class="title">Nuestra Carta</h2>
-    <p class="subtitle">Cocina mediterránea frente al mar</p>
+  <h2 class="title" data-es="Carta Oficial" data-en="Official Menu">Carta Oficial</h2>
 
-    <div class="card-glass">
-      <img src="assets/img/carta.jpg" id="cartaImg" alt="Carta">
-    </div>
+  <img src="assets/img/carta.jpg" id="cartaImg" class="menu-img" alt="Carta OASIS">
 
+  <div class="qr-box">
+    <p>Escanea la carta</p>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://TU_USUARIO.github.io/oasis/assets/img/carta.jpg">
   </div>
+
 </section>
 
 <!-- UBICACIÓN -->
 <section id="ubicacion" class="section dark">
-  <div class="container">
 
-    <h2 class="title">Ubicación</h2>
-    <p>📍 Playa Cruz del Mar, 11550 Chipiona, Cádiz</p>
+  <h2 class="title" data-es="Ubicación" data-en="Location">Ubicación</h2>
 
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps?q=Playa%20Cruz%20del%20Mar%2C%2011550%20Chipiona%2C%20C%C3%A1diz&output=embed"
-        width="100%"
-        height="350"
-        style="border:0; border-radius:12px;"
-        loading="lazy">
-      </iframe>
-    </div>
+  <p data-es="Playa Cruz del Mar, 11550 Chipiona, Cádiz"
+     data-en="Cruz del Mar Beach, Chipiona, Cádiz, Spain">
+     Playa Cruz del Mar, 11550 Chipiona, Cádiz
+  </p>
 
-  </div>
+  <iframe
+    src="https://www.google.com/maps?q=Playa%20Cruz%20del%20Mar%2C%2011550%20Chipiona%2C%20C%C3%A1diz&output=embed"
+    width="100%" height="350"
+    style="border:0;border-radius:12px;">
+  </iframe>
+
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto" class="section dark">
-  <div class="container">
 
-    <h2 class="title">Contacto</h2>
+  <h2 class="title" data-es="Contacto Corporativo" data-en="Corporate Contact">Contacto Corporativo</h2>
 
-    <p>📞 +34 606 93 28 42</p>
+  <p>📞 +34 606 93 28 42</p>
 
-    <a class="btn-whatsapp"
-       href="https://wa.me/34606932842?text=Hola%20quiero%20reservar%20en%20Chiringuito%20Oasis"
-       target="_blank">
-       Reservar por WhatsApp
-    </a>
+  <p>📧 chiringuitooasischipiona@gmail.com</p>
 
+  <a class="btn-whatsapp"
+     href="https://wa.me/34606932842?text=Hola%20quiero%20reservar%20en%20OASIS"
+     target="_blank"
+     data-es="Reservar por WhatsApp"
+     data-en="Book via WhatsApp">
+     Reservar por WhatsApp
+  </a>
+
+  <div class="social-big">
+    <a href="https://www.facebook.com/share/18Li5ewPVT/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/chiringuitooasischipiona?igsh=MWo1eGo2cHV0bmo5bw==" target="_blank">Instagram</a>
   </div>
+
 </section>
 
-<!-- MODAL CARTA -->
-<div id="modal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="imgModal">
-</div>
-
-<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Chiringuito Oasis · Beach Club 5⭐</p>
+  © 2026 OASIS Beach Club · Pepa & Ulric · De sol y sal
 </footer>
 
 <script src="assets/js/main.js"></script>
