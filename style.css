@@ -24,9 +24,19 @@ body{
   font-family:'Inter',sans-serif;
   color:var(--text);
   line-height:1.6;
+  background:#06131a;
+  position:relative;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
   background:
-    linear-gradient(rgba(5,15,20,0.78), rgba(5,15,20,0.92)),
-    url('img/bg-oasis.jpg') center center / cover no-repeat fixed;
+    linear-gradient(rgba(5,15,20,0.72), rgba(5,15,20,0.88)),
+    url('img/bg-oasis.jpg') center center / cover no-repeat;
+  transform:scale(1.02);
 }
 
 img{
@@ -157,7 +167,7 @@ a{
   inset:0;
   z-index:2;
   background:
-    linear-gradient(to bottom, rgba(5,15,20,0.28), rgba(5,15,20,0.72)),
+    linear-gradient(to bottom, rgba(5,15,20,0.20), rgba(5,15,20,0.60)),
     radial-gradient(circle at center, rgba(214,179,106,0.08), transparent 55%);
 }
 
@@ -219,12 +229,12 @@ a{
 .section{
   position:relative;
   padding:110px 0;
-  background:rgba(5,15,20,0.55);
-  backdrop-filter:blur(6px);
+  background:rgba(5,15,20,0.42);
+  backdrop-filter:blur(4px);
 }
 
 .section-dark{
-  background:rgba(5,15,20,0.68);
+  background:rgba(5,15,20,0.54);
 }
 
 .section-label{
@@ -365,7 +375,7 @@ a{
 .footer{
   padding:28px 0;
   text-align:center;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.28);
   border-top:1px solid rgba(255,255,255,0.08);
 }
 
@@ -409,6 +419,12 @@ a{
 @media (max-width:768px){
   .hero-bg{
     transform:translate3d(0,0,0) scale(1.12);
+  }
+
+  body::before{
+    background:
+      linear-gradient(rgba(5,15,20,0.74), rgba(5,15,20,0.90)),
+      url('img/bg-oasis.jpg') center center / cover no-repeat;
   }
 }
 
