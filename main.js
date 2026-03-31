@@ -1,13 +1,7 @@
-const btn = document.getElementById("langBtn");
-let lang = "es";
+const img = document.getElementById("cartaImg");
 
-btn.addEventListener("click", () => {
-
-  lang = lang === "es" ? "en" : "es";
-  btn.textContent = lang.toUpperCase();
-
-  document.querySelectorAll("[data-es]").forEach(el => {
-    el.textContent = el.getAttribute(`data-${lang}`);
+if (img) {
+  img.addEventListener("click", () => {
+    window.open(img.src, "_blank");
   });
-
-});
+}
