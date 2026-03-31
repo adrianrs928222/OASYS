@@ -62,3 +62,19 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".animate").forEach(el => {
   observer.observe(el);
 });
+
+// PARALLAX REAL HERO
+const heroBg = document.getElementById("heroBg");
+const isMobile = window.innerWidth <= 768;
+
+function parallaxHero() {
+  if (!heroBg) return;
+
+  const scrollY = window.scrollY;
+  const speed = isMobile ? scrollY * 0.18 : scrollY * 0.35;
+
+  heroBg.style.transform = `translate3d(0, ${speed}px, 0) scale(1.08)`;
+}
+
+window.addEventListener("scroll", parallaxHero, { passive: true });
+parallaxHero();
