@@ -1,0 +1,22 @@
+oasis-beach-club/
+│
+├── index.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── img/
+│       ├── logo.png
+│       ├── favicon.png
+│       ├── hero.jpg
+│       ├── carta.jpg
+│       ├── facebook.png
+│       ├── instagram.png
+│
+├── README.md
+│
+└── sitemap.xml   (opcional SEO PRO)
